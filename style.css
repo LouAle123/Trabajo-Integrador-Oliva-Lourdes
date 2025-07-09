@@ -1,0 +1,33 @@
+.lista {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 15px;
+}
+
+body {
+background-color: bisque;
+font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+padding: 20px;
+}
+
+form {
+margin-bottom: 20px;
+}
+
+input, 
+button {
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.tarjeta {
+    background-color: darkseagreen;
+    color: #ccc;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(red, green, blue, alpha);
+    padding: 20px;
+    width: 200px;
+}
