@@ -59,10 +59,43 @@ form {
   margin-bottom: 20px;
 }
 
-input, 
-button {
+input{
     padding: 10px;
     font-size: 1rem;
+}
+
+#input-texto {
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 2px solid #ffda75;
+  border-radius: 8px;
+  background-color: #fff8e1;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: 'Shadows Into Light', cursive;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+#input-texto:focus {
+  border-color: #ffd24c;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  background-color: #ffd24c;
+  border: none;
+  border-radius: 8px;
+  color: #5a5a5a;
+  font-weight: bold;
+  font-family: 'Shadows Into Light', cursive;
+  cursor: pointer;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ffeb7a;
 }
 
 @keyframes pegar {
