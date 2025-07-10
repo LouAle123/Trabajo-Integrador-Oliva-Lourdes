@@ -15,6 +15,12 @@ h1 {
 
 body {
 background-color: bisque;
+background-image: repeating-linear-gradient(
+  to bottom,
+  transparent,
+  transparent 29px,
+  #afabab 30px
+);
 font-family: Arial, Helvetica, sans-serif;
 margin: 0;
 height: 100vh;
@@ -50,12 +56,36 @@ button {
     font-size: 1rem;
 }
 
+@keyframes pegar {
+  0% { transform: scale(0.9) rotate(-10deg); opacity: 0; }
+  100% { transform: rotate(-1.5deg); opacity: 1; }
+}
+
 .tarjeta {
-    background-color: rgb(47, 54, 35);
-    color: #ccc;
+    background-color: #fffc7f;
+    color: #333;
+    font-family: 'Comic Sans MS', cursive;
     font-weight: bold;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 8px rgba(255, 255, 255, 0.3);
     padding: 20px;
     width: 200px;
+    height: 220 px;
+    transform: rotate(-2deg);
+    animation: pegar 0.4s ease-out;
+    position: relative;
+}
+
+.tarjeta::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
